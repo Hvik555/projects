@@ -30,17 +30,17 @@ private:
 };
 
 
-class Avegare : public Mood
+class Average : public Mood
 {
 public:
-    static Avegare* Oneinst();
+    static Average* Oneinst();
     Mood* moodTaran(Tarantula *tarantula) override;
     Mood* moodHorcsog(Horcsog *horcsog) override;
     Mood* moodMacska(Macska *macska) override;
 protected:
-    Avegare(){}
+    Average(){}
 private:
-    static Avegare* oneinst;
+    static Average* oneinst;
 };
 
 class Sad : public Mood

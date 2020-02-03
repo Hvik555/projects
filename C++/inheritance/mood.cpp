@@ -31,11 +31,11 @@ Mood* Happy::moodMacska(Macska *macska)
 }
 
 
-Avegare* Avegare::oneinst = nullptr;
-Avegare* Avegare::Oneinst()
+Average* Average::oneinst = nullptr;
+Average* Average::Oneinst()
 {
     if(oneinst == nullptr) {
-        oneinst = new Avegare();
+        oneinst = new Average();
     }
     return oneinst;
 }
@@ -46,13 +46,13 @@ Mood* Avegare::moodTaran(Tarantula *tarantula)
     return this;
 }
 
-Mood* Avegare::moodHorcsog(Horcsog *horcsog)
+Mood* Average::moodHorcsog(Horcsog *horcsog)
 {
     horcsog->changeHealthy(-3);
     return this;
 }
 
-Mood* Avegare::moodMacska(Macska *macska)
+Mood* Average::moodMacska(Macska *macska)
 {
     macska->changeHealthy(3);
     return this;
